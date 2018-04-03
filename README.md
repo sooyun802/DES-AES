@@ -9,17 +9,17 @@ Program Environment: Ubuntu 14.04 LTS
 * This program implements a key-recovery attack on the DES-AES algorithm
 	* input: plaintext-ciphertext pair *(m,c)*
 	* output: *k1*, *k2*
-* MD5 hash values of passwords: https://seclab.skku.edu/wp-content/uploads/2017/09/ passwords.txt
+* MD5 hash values of passwords: https://seclab.skku.edu/wp-content/uploads/2017/09/passwords.txt
 	* *k1*: the first 64 bits of the MD5 hash value generated from a password *p1*
 	* *k2*: the MD5 hash value itself generated from a password *p2*
 
 ### Input and Output Files
-* Input file: ***PlaintextCiphertext.txt***
+* Input file: ```PlaintextCiphertext.txt```
 ```
 SKKU is the top university in the world
 CBMsz223gfHe6AH6I+IIEjpXxjFlupBrGYZ8CDYYr9WJj4j0cMuL8uAA/Yxr9pNK
 ```
-* Output file: ***keys.txt***
+* Output file: ```keys.txt```
 ```
 coders
 piewtf
@@ -44,7 +44,7 @@ piewtf
 
 ## Command Line Arguments
 
-This program uses the DES and AES libraries of Openssl
+This program uses the DES and AES libraries of **Openssl**
 
 ```
 $ gcc DES_AES.c -lcrypto
